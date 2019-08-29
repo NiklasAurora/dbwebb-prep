@@ -152,3 +152,114 @@ footer {
         - `<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>`
     - Vi kan också lägga till Unicorn, som i sin tur kör fler tester fast på både HTML och CSS.
     - `<a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a>`
+
+## Header
+
+- Vi lägger till en header på sidan, som innehåller en snygg bild och en catch-phrase
+    - `<header></header>`
+        - `<img src="#" alt="logo">`
+        - `<span class="site-title">Stormtrooper-Murphy</span>`
+        - `<span class="site-slogan">Deathstar's finest.</span>`
+    - `src` måste finnas i en img-tag då det pekar vart bilden finns
+    - `alt` måste också finnas med, ger en alternativ text om bilden inte laddas samt används det för folk med nedsatt syn vid uppläsning av sidans innehåll.
+    - `class` är ett sätt att lägga till stil på ett element. Ett annat sätt att göra det är med hjälp utav `id`, men då man sällan lägger en specifik stil så är det bättre att göra generella regler, t.ex. alla våra `<h1>`:or ser ut på ett specifikt sätt.
+    
+---
+
+- Vi lägger till lite design för att få allt att hänga ihop
+
+```css
+.site-header {
+    background-color: #fff;
+    overflow: auto;
+}
+
+.site-header img {
+    float: left;
+}
+
+.site-title {
+    display: block;
+    padding-top: 1em;
+    padding-left: 50px;
+    font-size: 32px;
+    overflow: auto;
+}
+
+.site-slogan {
+    display: block;
+    padding-left: 50px;
+    font-style: italic;
+    overflow: auto;
+}
+```
+
+- Gå igenom samtliga regler och att en inledande punkt innebär att det är en klass medans en inledande brädgård pekar på ett id
+
+## Favicon
+
+- Vi lägger till en favicon, den lilla ikonen som syns längst upp i webbläsaren.
+- Den läggs till på ett liknande sätt som vårt stylesheet
+- `<link rel="icon" href="https://sstatic.se/image/theme/leaf_40x40.png">`
+- Här lånar jag vårt kära dbwebb-löv som används på diverse sidor kopplade till programmet.
+- Ursprungligen så användes filformatet `.ico`, men nu stödjer även de flesta webbläsare vanliga `.png` filer, som vi ser i vårt exempel. Ta gärna inte en stor bild, då det ger onödig laddningstid till sidan.
+
+## Footer
+
+- Det är nog dags att uppdatera vår footer, den är inte riktigt så fin som vi vill ha den.
+- Vi börjar med att lägga till en klass på vår footer:
+    - `<footer class="site-footer>`
+    - Vi lägger till en regel i vår CSS-fil:
+        - `.site-footer {}`
+- Vi laddar om sidan för att se uppdateringen vi gjorde.
+
+## Bild
+
+- Lite innehåll på sidan vill vi allt ha
+- Vi har använt `<img>`-taggen tidigare, så vi lägger in en bild på oss själva på vår sida, tillsammans med en rubrik och en paragraf
+    - `<img src="img/me.jpg" alt="This is me!" class="me">`
+    - `<h1>` - `<p>`
+- Tänk på att använda rätt bild för rätt syfte. Det är en övervägning om man vill ha en skarp bild som kanske tar lite längre tid att ladda eller om man vill ha en mindre bild som kanske inte är lika skarp.
+- Den vi fick var påtok för stor, så vi får minska den lite.
+- `.me {width: 400px}` ger oss en bredd på 400px på bilden, vi laddar om och ser om det ser mer rätt ut.
+
+## Navbar
+
+- Vi vill ju kunna navigera runt mellan våra sidor, så vi lägger till navigering:
+
+- `<nav>` är ett element som används runt navigeringsmenyer på sidor för att dels hjälpa när man ska lägga till stil men även som guide på att just detta är en meny.
+
+```html
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+</nav>
+```
+
+- Nu har vi bara en sida, men vi gör en snabb kopia på vår `index.html` och döper den till `about.html` istället. Då har vi två sidor och vår navbar borde fungera.
+- Vi lägger till lite style till den, nu ser den lite tråkig ut:
+
+```css
+.navbar {
+    padding: 1em;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.navbar a {
+    background-color: #eee;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #999;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar a:hover {
+    background-color: #000;
+    color: #fff;
+}
+```
+
+Gå igenom regel för regel.
