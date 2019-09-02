@@ -64,7 +64,7 @@ Följande är en bra grund på en HTML-sida:
     - För att använda den behöver vi länka den i vår HTML
         - I vår `<head>` lägger till följande rad:
         - `<link rel="stylesheet" href="style/style.css">`
-        - Link-taggen används för att referera till en extern resurs, så som CSS och JavaScript, men även fonter och annat
+        - Link-taggen används för att referera till en extern resurs, så som CSS, fonter och favicon
     - Vi inleder med att lägga lite stil på vår sida:
         - `background-color: #fcc`
         - Ladda om sidan
@@ -80,7 +80,7 @@ Följande är en bra grund på en HTML-sida:
     - Båda innehåller lite standard stil, som lägger till lite luft under och över.
 
 - Vi ändrar stilen på våra `<h1>`:or och våra paragrafer:
-    - Text-align center och färg white på h1
+    - Text-align center och färg `#ecf0f1` på h1
     - Border 1px solid på våra paragrafer
 
 ## Header och footer
@@ -192,6 +192,18 @@ footer {
     font-style: italic;
     overflow: auto;
 }
+```
+
+```
+float: left kopplar bort elementet från det naturliga flödet och positionerar det så långt till vänster det går i sitt omslutande element.
+
+overflow: auto talar om vad som ska hända om ett elements innehåll blir för stort för att få plats. Värdet auto ritar om det omslutande elementet om innehållet blir för stort.
+
+display: block talar om att elementet ska ta upp hela utrymmet det har horisontellt. Kommande element hamnar då på en ny rad.
+
+padding talar om hur mycket utrymme inåt som ska finnas i elementet innan dess innehåll ritas ut.
+
+font-style: italic talar om att texten ska visas som kursiv.
 ```
 
 - Gå igenom samtliga regler och att en inledande punkt innebär att det är en klass medans en inledande brädgård pekar på ett id
