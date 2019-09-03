@@ -7,6 +7,7 @@
     - Standard när man skapar hemsidor
     - Markerar strukturen på en hemsida med hjälp utav HTML-element
     - I kod visas dessa element genom HTML-taggar, ex `<element></element>`
+        - De flesta taggar behöver en slut-tagg, men det finns några undantag, så kallade `void elements`. Ex. `br, hr, img, link`
     - Hemsidan visar inte själva taggen utan använder den som hjälp vid rendering av sidan.
 - CSS
     - Står för Cascading Style Sheets
@@ -41,9 +42,9 @@ Följande är en bra grund på en HTML-sida:
 </html>
 ```
 
-*`<!doctype html>`* är egentligen ingen HTML-tagg, utan en deklarering eller instruktion till webbläsaren att dokumentet innehåller HTML kod.
+*`<!doctype html>`* är egentligen ingen HTML-tagg, utan en instruktion till webbläsaren att dokumentet innehåller HTML kod.
 
-*`<html>`* representerar roten av dokumentet och verkar som en behållare för alla andra element som sidan behöver.
+*`<html>`* representerar roten av dokumentet och fungerar som en behållare för alla andra element som sidan behöver.
 
 *`<html lang=”en”>`* talar om för webbläsaren vilket språk som kommer användas. Innehåller kommer tillslut vara på engelska (en).
 
@@ -137,6 +138,12 @@ footer {
 }
 ```
 
+---
+
+## Frågor?
+
+---
+
 ## Validering
 
 - Hur vet man då att man skriver rätt kod?
@@ -157,7 +164,7 @@ footer {
 
 - Vi lägger till en header på sidan, som innehåller en snygg bild och en catch-phrase
     - `<header></header>`
-        - `<img src="#" alt="logo">`
+        - `<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/MCM_London_May_15_-_Stormtrooper_%2818246218651%29.jpg" alt="logo">`
         - `<span class="site-title">Stormtrooper-Murphy</span>`
         - `<span class="site-slogan">Deathstar's finest.</span>`
     - `src` måste finnas i en img-tag då det pekar vart bilden finns
@@ -195,15 +202,25 @@ footer {
 ```
 
 ```
-float: left kopplar bort elementet från det naturliga flödet och positionerar det så långt till vänster det går i sitt omslutande element.
+float: left
 
-overflow: auto talar om vad som ska hända om ett elements innehåll blir för stort för att få plats. Värdet auto ritar om det omslutande elementet om innehållet blir för stort.
+Kopplar bort elementet från det naturliga flödet och positionerar det så långt till vänster det går i sitt omslutande element.
 
-display: block talar om att elementet ska ta upp hela utrymmet det har horisontellt. Kommande element hamnar då på en ny rad.
+overflow: auto
 
-padding talar om hur mycket utrymme inåt som ska finnas i elementet innan dess innehåll ritas ut.
+Talar om vad som ska hända om ett elements innehåll blir för stort för att få plats. Värdet auto ritar om det omslutande elementet om innehållet blir för stort.
 
-font-style: italic talar om att texten ska visas som kursiv.
+display: block
+
+Talar om att elementet ska ta upp hela utrymmet det har horisontellt. Kommande element hamnar då på en ny rad.
+
+padding: x 
+
+Talar om hur mycket utrymme inåt som ska finnas i elementet innan dess innehåll ritas ut.
+
+font-style: italic
+
+Talar om att texten ska visas som kursiv.
 ```
 
 - Gå igenom samtliga regler och att en inledande punkt innebär att det är en klass medans en inledande brädgård pekar på ett id
@@ -229,7 +246,7 @@ font-style: italic talar om att texten ska visas som kursiv.
 
 - Lite innehåll på sidan vill vi allt ha
 - Vi har använt `<img>`-taggen tidigare, så vi lägger in en bild på oss själva på vår sida, tillsammans med en rubrik och en paragraf
-    - `<img src="img/me.jpg" alt="This is me!" class="me">`
+    - `<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Star_Wars_Celebration_Orlando_Screen-Used_Stormtrooper_Helmet_2.jpg" alt="My helm" class="me">`
     - `<h1>` - `<p>`
 - Tänk på att använda rätt bild för rätt syfte. Det är en övervägning om man vill ha en skarp bild som kanske tar lite längre tid att ladda eller om man vill ha en mindre bild som kanske inte är lika skarp.
 - Den vi fick var påtok för stor, så vi får minska den lite.
