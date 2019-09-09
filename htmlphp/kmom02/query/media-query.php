@@ -1,8 +1,7 @@
-<?php include("incl/header.php"); ?>
-    <nav class="navbar">
-        <a class="selected" href="media-query.php">Home</a>
-        <a href="about.php">About</a>
-    </nav>
+<?php
+    $title = "Home";
+    include("incl/header.php");
+?>
     <main class="main">
         <div class="text">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deleniti aliquid necessitatibus accusantium vitae pariatur ipsum voluptate laborum soluta cum nihil dolores minima temporibus, obcaecati quam earum quas, dolorum atque.</p>
