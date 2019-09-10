@@ -33,12 +33,10 @@ body {
     color: #ecf0f1;
     vertical-align: center;
     border: 2px solid transparent;
-    transition: border 0.5s ease-in
 }
 
 .navbar a:hover {
     border: 2px solid #ecf0f1;
-    transition: border 0.5s ease-in-out;
 }
 
 .navbar .selected {
