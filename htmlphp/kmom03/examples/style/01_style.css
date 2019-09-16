@@ -1,0 +1,29 @@
+html {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/37/Flowerbed_at_St_Chad%27s_Gardens%2C_Kirkby.JPG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer {
+    padding: 1em;
+    background-color: rgba(152, 92, 107, 0.6);
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(152, 92, 190, 0.8);
+}
