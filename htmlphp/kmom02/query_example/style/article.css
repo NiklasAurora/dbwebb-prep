@@ -1,0 +1,19 @@
+article header {
+    text-align: center;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+article footer {
+    margin-top: 0.75em;
+    padding-top: 0.75em;
+}
+
+.byline {
+    text-align: center;
+}
+
+.byline a {
+    color: #ecf0f1;
+}
