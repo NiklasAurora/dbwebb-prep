@@ -1,0 +1,39 @@
+.content {
+    margin: 0 auto;
+    width: 600px;
+}
+
+table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ccc;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+th {
+    height: 50px;
+    color: darkblue;
+}
+
+td {
+    text-align: center;
+}
+
+td:first-child {
+    color: green;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: auto;
+    }
+}
