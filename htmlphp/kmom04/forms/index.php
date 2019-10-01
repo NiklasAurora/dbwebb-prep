@@ -25,6 +25,7 @@
             </select>
             <label for="message">Your message</label>
             <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+            <input type="hidden" id="redirect" name="redirect" value="<?= $_GET['page'] ?>">
             <button type="submit">Send message!</button>
         </fieldset>
     </form>
