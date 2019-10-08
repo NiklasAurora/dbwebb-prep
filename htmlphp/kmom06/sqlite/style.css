@@ -37,6 +37,10 @@ td:first-child {
     color: green;
 }
 
+td a {
+    text-decoration: none;
+}
+
 tr:nth-child(even) {
     background-color: #eee;
 }

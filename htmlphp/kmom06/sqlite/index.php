@@ -31,8 +31,8 @@ $result = getAll($db, $stmt);
                 <th>Type</th>
                 <th>Color</th>
                 <th>Amount</th>
-                <th>Action</th>
-                <th>Action</th>
+                <th>Update</th>
+                <th>Delete</th>
             </tr>
             <?php foreach ($result as $key => $row) : ?>
                 <tr>
@@ -40,8 +40,8 @@ $result = getAll($db, $stmt);
                     <td><?= $row["type"] ?></td>
                     <td><?= $row["color"] ?></td>
                     <td><?= $row["amount"] ?></td>
-                    <td><a href="update.php?fruit=<?= $row['id'] ?>">Update</a></td>
-                    <td><a href="delete.php?fruit=<?= $row['id'] ?>">Delete</a></td>
+                    <td><a href="update.php?fruit=<?= $row['id'] ?>">&#x1F58A;</a></td>
+                    <td><a href="delete.php?fruit=<?= $row['id'] ?>">&#x1F5D1;</a></td>
                 </tr>
             <?php endforeach; ?>
         </table>
