@@ -1,0 +1,15 @@
+<%- include("../partials/header") %>
+
+<form method="POST">
+    <fieldset>
+        <label for="id">ID</label>
+        <input type="number" name="id" id="id" value="<%= movie.id %>" readonly>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" value="<%= movie.title %>">
+        <label for="released">Released</label>
+        <input type="date" name="released" id="released" value="<%= movie.released_format %>">
+        <button type="submit">Update movie</button>
+    </fieldset>
+</form>
+
+<%- include("../partials/footer") %>

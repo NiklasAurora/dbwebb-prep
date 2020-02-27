@@ -1,0 +1,24 @@
+<%- include("../partials/header") %>
+
+<h1>Movie Index</h1>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Released</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+    <% for (movie of movies) { %>
+    <tr>
+        <td><%= movie.id %></td>
+        <td><%= movie.title %></td>
+        <td><%= movie.released_format %></td>
+        <td><a href="/movie/update/<%= movie.id %>">&#x270e;</a></td>
+        <td><a href="/movie/delete/<%= movie.id %>">&#x1F5D1;</a></td>
+    </tr>
+    <% } %>
+</table>
+
+<%- include("../partials/footer") %>

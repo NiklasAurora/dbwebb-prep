@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+<table>
+    <tr>
+        <th>akronym</th>
+        <th>avdelning</th>
+        <th>fornamn</th>
+        <th>lon</th>
+    </tr>
+    <% for (teacher of teachers) { %>
+        <tr>
+            <td><%= teacher.akronym %></td>
+            <td><%= teacher.avdelning %></td>
+            <td><%= teacher.fornamn %></td>
+            <td><%= teacher.lon %></td>
+        </tr>
+    <% } %>
+</table>
+
+<%- include("../partials/footer") %>

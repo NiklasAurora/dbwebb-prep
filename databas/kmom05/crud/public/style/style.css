@@ -1,0 +1,55 @@
+* {
+    border-collapse: collapse;
+}
+
+body {
+    margin: 8px auto;
+    /* background: lightcoral; */
+    width: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+nav a {
+    width: 30%;
+    border: 1px solid gray;
+    padding: 0.5em;
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 90%;
+}
+
+fieldset button[type=submit] {
+    padding: 0.6em 1.2em;
+    font-size: 1.2em;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 0.4em;
+    border: 1px solid black;
+}
+
+a {
+    color: black;
+}
+
+.danger {
+    background-color: red;
+}
